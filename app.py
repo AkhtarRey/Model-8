@@ -22,7 +22,7 @@ def preprocess_image(image):
     return image
 
 # Function to validate if the prediction is a sign language alphabet
-def is_valid_prediction(prediction, threshold=0.5):
+def is_valid_prediction(prediction, threshold=0.2):
     confidence = np.max(prediction)
     return confidence > threshold
 
